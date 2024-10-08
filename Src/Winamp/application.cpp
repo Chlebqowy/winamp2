@@ -124,7 +124,7 @@ HANDLE Application::main_getMainThreadHandle()
 {
 	if (hMainThread == 0)
 		return (HANDLE)0;
-	HANDLE h = (HANDLE)0;
+	HANdLE h = (HANDLE)0;
 	DuplicateHandle(GetCurrentProcess(), hMainThread, GetCurrentProcess(), &h, 0, FALSE, DUPLICATE_SAME_ACCESS);
 	return h;
 }
